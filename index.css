@@ -5,6 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 95.9vh;
+  background-image: linear-gradient(
+    to right top,
+    #4c3944,
+    #453543,
+    #3d3141,
+    #342e3f,
+    #2b2b3d,
+    #242b3d,
+    #1d2b3b,
+    #172b39,
+    #162e38,
+    #173036,
+    #1b3234,
+    #203432
+  );
 }
 
 code {
@@ -46,24 +62,62 @@ code {
 .search__btn:hover {
   cursor: pointer;
   background-color: black;
-  transition: all 1s;
+  transition: all 0.2s;
 }
 
+.music__container {
+  border: 2px solid transparent;
+  margin-top: 20px;
+  display: flex;
+  height: 700px;
+  justify-content: space-evenly;
+}
+
+.results,
 .tracklist {
-  text-align: center;
+  display: flex;
   border: 2px solid black;
-  border-radius: 15px;
-  width: 400px;
-  height: 800px;
-  margin-left: 100px;
+  width: 500px;
+  justify-content: center;
+  border-radius: 15px 50px;
 }
 
-.search__result__div {
-  text-align: center;
+.music__box {
   border: 2px solid black;
-  border-radius: 15px;
-  width: 400px;
-  height: 800px;
-  margin-left: 100px;
+  width: 500px;
+  display: flex;
+  height: 400px;
   justify-content: center;
+  margin-top: 150px;
+  border-radius: 15px 50px;
+}
+
+.playbar__div {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.playbar {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid transparent;
+  width: 500px;
+}
+
+.playBtn {
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+.play {
+  width: 60px;
+}
+
+.save__to__spotify {
+  width: 80px;
 }

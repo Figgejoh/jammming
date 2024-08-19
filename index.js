@@ -23,23 +23,36 @@ function SearchBar() {
 function SearchButton() {
   return (
     <div className="search__btn__div">
-      <button className="search__btn"></button>
+      <button className="search__btn">Search</button>
     </div>
   );
 }
 
-function SearchResults() {
+function MusicDiv() {
   return (
-    <div className="search__result__div">
-      <h2>Search Results</h2>
+    <div className="music__container">
+      <div className="results">
+        <h2>Results</h2>
+      </div>
+      <div className="music__box">
+        <h2>Now Playing</h2>
+      </div>
+      <div className="tracklist">
+        <h2>Tracks</h2>
+      </div>
     </div>
   );
 }
 
-function TrackList() {
+function PlayBar() {
   return (
-    <div className="tracklist">
-      <h2>Tracklist</h2>
+    <div className="playbar__div">
+      <div className="playbar">
+        <button className="prev playBtn">-</button>
+        <button className="play playBtn">play</button>
+        <button className="next playBtn">+</button>
+        <button className="save__to__spotify playBtn">Save</button>
+      </div>
     </div>
   );
 }
@@ -50,8 +63,8 @@ root.render(
     <Jammming />
     <SearchBar />
     <SearchButton />
-    <SearchResults />
-    <TrackList />
+    <MusicDiv />
+    <PlayBar />
   </React.StrictMode>
 );
 
